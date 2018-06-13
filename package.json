@@ -1,11 +1,15 @@
 {
   "name": "vue-json-to-html",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "main": "dist/json-to-html.common.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhiichuk/vue-json-to-html.git"
+  },
   "dependencies": {
     "vue": "^2.5.16"
   },
