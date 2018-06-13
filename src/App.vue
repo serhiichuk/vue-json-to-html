@@ -1,24 +1,41 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <JsonToHtml :json="json" :bem="true" rootClassName="wrapper" rootTagName="section"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import JsonToHtml from "./components/json-to-html";
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    JsonToHtml
+  },
+  data() {
+    return {
+      json: {
+        title: 'True Title',
+        'oredered-list': [
+          'list item - 1',
+          'list item - 2',
+          'list item - 3',
+          'list item - 4',
+          {
+            'extended': {
+              name: 'foo',
+              desc: 'bar'
+            }
+          }
+        ]
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
