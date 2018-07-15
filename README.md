@@ -1,4 +1,4 @@
-# vue-json-to-dom
+# vue-json-to-html
 
 **Status: beta** 
 
@@ -12,8 +12,8 @@
 ## Usage
 Install component to your project:
 ```
-npm install vue-json-to-dom
-yarn add vue-json-to-dom
+npm install vue-json-to-html
+yarn add vue-json-to-html
 ```
 
 Import and include to Vue Instance installed component:
