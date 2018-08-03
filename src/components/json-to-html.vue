@@ -74,7 +74,7 @@
             className,
             isElement: true,
           });
-          console.log(newClassName, 's');
+
           return <div class={newClassName} domPropsInnerHTML={data}/>
         }
 
@@ -82,7 +82,7 @@
          * call jsToDOM() for each element in array/object recursive
          */
         newClassName = getClassName({ parentClassName, className });
-        console.log(newClassName, 'a');
+
         if (isArray) {
           return <div class={newClassName}>
             {data.map((item, index) => jsToDOM({
