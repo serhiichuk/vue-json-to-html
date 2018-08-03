@@ -3,8 +3,8 @@
   "version": "0.1.8",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build:dev": "vue-cli-service build --target lib ./src/components/json-to-html.vue --watch",
-    "build:prod": "vue-cli-service build --target lib ./src/components/json-to-html.vue"
+    "dev": "vue-cli-service build --target lib ./src/components/json-to-html.vue --watch",
+    "build": "vue-cli-service build --target lib ./src/components/json-to-html.vue"
   },
   "files": [
     "dist/*.js"
